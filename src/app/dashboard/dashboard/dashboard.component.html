@@ -1,0 +1,10 @@
+<button (click)="onSearch()">SEARCH</button>
+<div *ngIf="dashboard">
+  <p>{{ dashboard.name }}</p>
+  <p>{{ dashboard.description }}</p>
+  <pre>
+    {{ dashboard | json }}
+  </pre>
+</div>
+<button (click)="onSave()">SAVE</button>
+<button (click)="onChange()">CHANGE</button>
